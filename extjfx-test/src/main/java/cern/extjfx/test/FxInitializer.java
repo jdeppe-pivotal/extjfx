@@ -4,12 +4,12 @@
 
 package cern.extjfx.test;
 
+import javafx.embed.swing.JFXPanel;
+
+import javax.swing.*;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import javax.swing.SwingUtilities;
-
-import javafx.embed.swing.JFXPanel;
 
 /**
  * Initializer of JavaFX environment. To be used by JUnit tests that work with graphical components.
