@@ -73,8 +73,8 @@ public final class Axes {
      * @throws NullPointerException if either axis is {@code null}
      */
     public static void bindBounds(ValueAxis<?> axis, ValueAxis<?> observable) {
-        axis.lowerBoundProperty().bind(observable.lowerBoundProperty());
         axis.upperBoundProperty().bind(observable.upperBoundProperty());
+        axis.lowerBoundProperty().bind(observable.lowerBoundProperty());
     }
 
     /**

@@ -87,8 +87,8 @@ public abstract class AbstractNumericAxis extends ValueAxis<Number> {
             }
         };
 
-        lowerBoundProperty().addListener(rangeUpdater);
         upperBoundProperty().addListener(rangeUpdater);
+        lowerBoundProperty().addListener(rangeUpdater);
     }
 
     private final BooleanProperty autoRangeRounding = new SimpleBooleanProperty(true);
