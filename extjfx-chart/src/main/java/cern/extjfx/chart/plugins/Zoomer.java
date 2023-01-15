@@ -564,7 +564,12 @@ public class Zoomer extends XYChartPlugin<Number, Number> {
         return true;
     }
 
-    private boolean zoomOrigin() {
+    /**
+     * Invokes zoom origin action on chart if there was a zoom active.
+     *
+     * @return true if there was a zoom active and we could zoom to the origin, false otherwise.
+     */
+    public boolean zoomOrigin() {
         clearZoomStackIfAxisAutoRangingIsEnabled();
         Map<XYChart<Number, Number>, Rectangle2D> zoomWindows = getZoomWindows(Deque::peekLast);
         if (zoomWindows.isEmpty()) {
