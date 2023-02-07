@@ -53,7 +53,7 @@ public final class LogarithmicAxis extends AbstractNumericAxis {
         @Override
         protected void invalidated() {
             if (get() <= 1) {
-                throw new IllegalArgumentException("logarithmBase must be grater than 1");
+                throw new IllegalArgumentException("logarithmBase must be greater than 1");
             }
             invalidateRange();
             requestAxisLayout();
@@ -61,7 +61,7 @@ public final class LogarithmicAxis extends AbstractNumericAxis {
     };
 
     /**
-     * Base of the logarithm used by the axis, must be grater than 1.
+     * Base of the logarithm used by the axis, must be greater than 1.
      * <p>
      * <b>Default value: 10</b>
      * </p>

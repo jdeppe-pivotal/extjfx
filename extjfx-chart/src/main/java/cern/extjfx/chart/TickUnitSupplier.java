@@ -5,9 +5,9 @@
 package cern.extjfx.chart;
 
 /**
- * Supplier of Axis tick units that is expected to compute a tick unit that is equal or grater than the one given as
+ * Supplier of Axis tick units that is expected to compute a tick unit that is equal or greater than the one given as
  * argument. In case the calculated tick labels don't fit on the axis, the {@link #computeTickUnit(double)} method is
- * called again with a grater reference unit so that the supplier can calculate next bigger value of the tick unit.
+ * called again with a greater reference unit so that the supplier can calculate next bigger value of the tick unit.
  * <p>
  * If the {@link #computeTickUnit(double)} returns value that is smaller than the reference unit, the value will be used
  * without further checks which may result in tick labels overlapping.
@@ -21,10 +21,10 @@ package cern.extjfx.chart;
 public interface TickUnitSupplier {
 
     /**
-     * Should return tick unit that is equal or grater to the given reference tick unit.
+     * Should return tick unit that is equal or greater to the given reference tick unit.
      * 
      * @param referenceTickUnit reference tick unit
-     * @return the computed unit that is equal or grater to the specified one
+     * @return the computed unit that is equal or greater to the specified one
      */
     double computeTickUnit(double referenceTickUnit);
 }

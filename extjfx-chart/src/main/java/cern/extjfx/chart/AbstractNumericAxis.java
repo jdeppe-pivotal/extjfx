@@ -82,7 +82,7 @@ public abstract class AbstractNumericAxis extends ValueAxis<Number> {
                     setRange(computeRange(), false);
                 } else {
                     throw new IllegalArgumentException("lowerBound [" + getLowerBound()
-                            + "] must not be grater than upperBound [" + getUpperBound() + "]");
+                            + "] must not be greater than upperBound [" + getUpperBound() + "]");
                 }
             }
         };

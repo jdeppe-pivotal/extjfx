@@ -54,7 +54,7 @@ public final class DefaultTickUnitSupplier implements TickUnitSupplier {
     /**
      * Computes tick unit using the following formula: tickUnit = M*10^E, where M is one of the multipliers specified in
      * the constructor and E is an exponent of 10. Both M and E are selected so that the calculated unit is the smallest
-     * (closest to the zero) value that is grater than or equal to the reference tick unit.
+     * (closest to the zero) value that is greater than or equal to the reference tick unit.
      * <p>
      * For example with multipliers [1, 2, 5], the method will give the following results: 
      * <pre>

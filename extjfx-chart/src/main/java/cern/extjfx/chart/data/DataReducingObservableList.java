@@ -186,7 +186,7 @@ public class DataReducingObservableList<X extends Number, Y extends Number>
         @Override
         protected void invalidated() {
             if (get() < MIN_POINTS_COUNT) {
-                throw new IllegalArgumentException("pointsCount must be grater than 1");
+                throw new IllegalArgumentException("pointsCount must be greater than 1");
             }
             reduce();
         }
@@ -214,7 +214,7 @@ public class DataReducingObservableList<X extends Number, Y extends Number>
     /**
      * Sets the value of {@link #maxPointsCountProperty()}.
      *
-     * @param value the maximum number of points (grater than 1) that the collection can contain.
+     * @param value the maximum number of points (greater than 1) that the collection can contain.
      */
     public final void setMaxPointsCount(int value) {
         maxPointsCountProperty().set(value);
